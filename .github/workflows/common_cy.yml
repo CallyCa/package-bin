@@ -3,7 +3,7 @@ name: Common CI - Reusable Workflow
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   lint:
@@ -16,4 +16,8 @@ jobs:
     - name: Node.js Setup
       uses: actions/setup-node@v2
     - name: Installation of Node.js dependencies
-      run: npm run pretest && npm run coverage
+      run: npm install
+    - name: Running Tests
+      run: npm run pretest && npm run test
+    - name: Running Coverage
+      run: npm run coverage
