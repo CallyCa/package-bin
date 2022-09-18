@@ -1,13 +1,13 @@
 {
-  "name": "pkg-bin",
-  "version": "1.0.2",
+  "name": "package-bin",
+  "version": "1.0.3",
   "description": "Get a command name from a package.json object",
-  "repository": "shinnn/pkg-bin",
-  "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+  "repository": "CallyCa/package-bin",
+  "author": "CallyCa",
   "scripts": {
-    "pretest": "eslint --fix --format=codeframe index.js test.js",
-    "test": "node test.js",
-    "coverage": "istanbul cover test.js"
+    "pretest": "eslint --fix index.js test/index.js",
+    "test": "node test/index.js",
+    "coverage": "istanbul cover test/index.js"
   },
   "license": "CC0-1.0",
   "files": [
@@ -26,15 +26,19 @@
     "property"
   ],
   "dependencies": {
-    "inspect-with-kind": "^1.0.2"
+    "inspect-with-kind": "^1.0.5"
   },
   "devDependencies": {
-    "@shinnn/eslint-config-node": "^4.0.2",
-    "eslint": "^4.3.0",
+    "@shinnn/eslint-config-node": "^6.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
     "istanbul": "^0.4.5",
-    "tape": "^4.7.0"
-  },
-  "eslintConfig": {
-    "extends": "@shinnn/node"
+    "istanbul-coveralls": "^1.0.3",
+    "tape": "^5.6.0",
+    "typescript": "*"
   }
 }

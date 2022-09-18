@@ -1,15 +1,14 @@
-# pkg-bin
+# Package-bin
 
-[![NPM version](https://img.shields.io/npm/v/pkg-bin.svg)](https://www.npmjs.com/package/pkg-bin)
-[![Build Status](https://travis-ci.org/shinnn/pkg-bin.svg?branch=master)](https://travis-ci.org/shinnn/pkg-bin)
-[![Coverage Status](https://img.shields.io/coveralls/shinnn/pkg-bin.svg)](https://coveralls.io/r/shinnn/pkg-bin)
+[![NPM version](https://img.shields.io/npm/v/package-bin.svg)](https://www.npmjs.com/package/package-bin)
+[![Coverage Status](https://img.shields.io/coveralls/callyca/package-bin.svg)](https://coveralls.io/r/callyca/package-bin)
 
 Get a command name from a [package.json](https://docs.npmjs.com/files/package.json) object
 
 ```javascript
-const pkgBin = require('pkg-bin');
+const pkgBin = require('package-bin');
 
-const pakcageJson = {
+const packageJson = {
   name: 'my-tool-cli',
   bin: {
     'my-tool': 'lib/cli.js'
@@ -24,13 +23,13 @@ pkgBin(pakcageJson); //=> 'my-tool'
 [Use npm.](https://docs.npmjs.com/cli/install)
 
 ```
-npm install pkg-bin
+npm install package-bin
 ```
 
 ## API
 
 ```javascript
-const pkgBin = require('pkg-bin');
+const pkgBin = require('package-bin');
 ```
 
 ### pkgBin(*pkgData*)
