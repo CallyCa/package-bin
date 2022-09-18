@@ -15,7 +15,7 @@ const packageJson = {
   }
 };
 
-pkgBin(pakcageJson); //=> 'my-tool'
+pkgBin(packageJson); //=> 'my-tool'
 ```
 
 ## Installation
